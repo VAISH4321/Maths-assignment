@@ -1,0 +1,12 @@
+#newtons law of cooling
+import math
+temp_air=30  #in celsius
+temp1=100
+temp2=70
+initial_time=0
+final_time=15   #in minutes
+temp_main=40     #time to find
+c=temp1-temp_air
+k=(-1/final_time)*math.log((temp2-temp_air)/c)
+t=final_time*(math.log((temp_main-temp_air)/c)/math.log((temp2-temp_air)/c))
+print('The Time when Temperature is',temp_main,'is',t)
