@@ -1,0 +1,11 @@
+#Natural Growth
+import math
+inital_time=0
+n1=100
+time1=60
+n2=332
+time_final=90
+c=n1
+k=(1/time1)*math.log(n2/c)
+n3=((math.exp(k*90))*100)
+print('The value of n3 after',time_final,'is',n3)
